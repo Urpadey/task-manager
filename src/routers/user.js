@@ -16,7 +16,7 @@ router.post('/users', async (req, res) => {
         mail(user.email, user.name, 'Welcome Message', `
         We at Pharma App, warmly welcome to you to our platform,we happy to have you here and we know together we will do great things
         Thanks for Joining`)
-        console.log('l')
+
 
         res.status(201).send({ user, token })
     } catch (e) {
